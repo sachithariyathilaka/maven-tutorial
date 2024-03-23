@@ -18,7 +18,7 @@
     <url>https://github.com/sachithariyathilaka/maven-tutorial</url>
     <inceptionYear>2024</inceptionYear>
 
-    <!-- Licenses information -->
+    <!-- License information -->
     <licenses>
         <license>
             <name>MIT Licence</name>
