@@ -12,15 +12,6 @@
     <!-- Packaging information -->
     <packaging>jar</packaging>
 
-    <!-- Properties information -->
-    <properties>
-
-        <!-- Project properties -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
-
-    </properties>
-
     <!-- Project information -->
     <name>Maven Tutorial</name>
     <description>Java maven tutorial project</description>
@@ -48,6 +39,41 @@
             <timezone>UTC +5:30</timezone>
         </developer>
     </developers>
+
+    <!-- Properties information -->
+    <properties>
+
+        <!-- Project properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+
+        <!-- Dependency properties -->
+        <junit.version>4.13.2</junit.version>
+
+    </properties>
+
+    <!-- Dependency information -->
+    <dependencies>
+
+        <!-- junit dependency -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Profile information -->
+    <profiles>
+        <profile>
+            <id>tutorial</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
     <!-- Repository information -->
     <repositories>
@@ -79,16 +105,6 @@
         </pluginRepository>
 
     </pluginRepositories>
-
-    <!-- Profile information -->
-    <profiles>
-        <profile>
-            <id>tutorial</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-    </profiles>
 
     <!-- Build information -->
     <build>
