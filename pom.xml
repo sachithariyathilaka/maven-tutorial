@@ -25,6 +25,12 @@
         </license>
     </licenses>
 
+    <!-- Organization information -->
+    <organization>
+        <name>ByteGen Technologies</name>
+        <url>https://github.com/sachithariyathilaka</url>
+    </organization>
+
     <!-- Developer information -->
     <developers>
 
