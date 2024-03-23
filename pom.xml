@@ -25,7 +25,7 @@
         </license>
     </licenses>
 
-    <!-- Developers information -->
+    <!-- Developer information -->
     <developers>
         <developer>
             <id>1</id>
@@ -40,7 +40,7 @@
         </developer>
     </developers>
 
-    <!-- Properties information -->
+    <!-- Property information -->
     <properties>
 
         <!-- Project properties -->
