@@ -27,6 +27,7 @@
 
     <!-- Developer information -->
     <developers>
+
         <developer>
             <id>1</id>
             <name>Sachith Ariyathilaka</name>
@@ -38,6 +39,7 @@
             </roles>
             <timezone>UTC +5:30</timezone>
         </developer>
+
     </developers>
 
     <!-- Property information -->
