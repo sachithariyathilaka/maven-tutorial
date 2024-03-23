@@ -4,19 +4,127 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.maven</groupId>
-    <artifactId>tutorial</artifactId>
+    <!-- Core information -->
+    <groupId>io.github.sachithariyathilaka</groupId>
+    <artifactId>maven-tutorial</artifactId>
     <version>1.0.0</version>
 
+    <!-- Packaging information -->
     <packaging>jar</packaging>
 
-    <name>Maven Tutorial</name>
-    <url>https://repo.maven.apache.org</url>
-
+    <!-- Properties information -->
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+
+        <!-- Project properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+
     </properties>
+
+    <!-- Project information -->
+    <name>Maven Tutorial</name>
+    <description>Java maven tutorial project</description>
+    <url>https://github.com/sachithariyathilaka/maven-tutorial</url>
+    <inceptionYear>2024</inceptionYear>
+
+    <!-- Licenses information -->
+    <licenses>
+        <license>
+            <name>MIT Licence</name>
+        </license>
+    </licenses>
+
+    <!-- Developers information -->
+    <developers>
+        <developer>
+            <id>1</id>
+            <name>Sachith Ariyathilaka</name>
+            <organization>ByteGen Technologies</organization>
+            <organizationUrl>https://github.com/sachithariyathilaka</organizationUrl>
+            <email>sachith.vidu@yahoo.com</email>
+            <roles>
+                <role>Chairman</role>
+            </roles>
+            <timezone>UTC +5:30</timezone>
+        </developer>
+    </developers>
+
+    <!-- Repository information -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- Plugin repository information -->
+    <pluginRepositories>
+
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+
+    </pluginRepositories>
+
+    <!-- Profile information -->
+    <profiles>
+        <profile>
+            <id>tutorial</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
+    <!-- Build information -->
+    <build>
+
+        <!-- General information -->
+        <directory>${project.basedir}/target</directory>
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+
+        <!-- Plugin information -->
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+    <!-- SCM information -->
+    <scm>
+        <url>https://github.com/sachithariyathilaka/maven-tutorial</url>
+        <connection>scm:git:https://github.com/sachithariyathilaka/maven-tutorial.git</connection>
+        <developerConnection>scm:git:git@github.com:sachithariyathilaka/maven-tutorial.git</developerConnection>
+    </scm>
+
+    <!-- Reporting information -->
+    <reporting>
+        <outputDirectory>${project.build.directory}/site</outputDirectory>
+    </reporting>
 
 </project>
