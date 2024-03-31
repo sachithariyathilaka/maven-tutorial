@@ -5,7 +5,7 @@ package io.github.sachithariyathilaka;
  *
  * @author  Sachith Ariyathilaka
  * @version 1.0.0
- * @since ``2024/03/16
+ * @since   2024/03/16
  */
 public class MavenTutorial {
 
