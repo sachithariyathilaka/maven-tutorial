@@ -6,7 +6,7 @@ Java Maven tutorial project.
   * Maven
 
 * ### Configuration
-  * https://sachithariyathilaka.medium.com/maven-778d11da0443
+  * https://medium.com/towardsdev/maven-778d11da0443
 
 * ### Release Note
 
