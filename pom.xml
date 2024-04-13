@@ -20,9 +20,11 @@
 
     <!-- License information -->
     <licenses>
+
         <license>
             <name>MIT Licence</name>
         </license>
+
     </licenses>
 
     <!-- Organization information -->
@@ -75,16 +77,19 @@
 
     <!-- Profile information -->
     <profiles>
+
         <profile>
             <id>tutorial</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
         </profile>
+
     </profiles>
 
     <!-- Repository information -->
     <repositories>
+
         <repository>
             <id>central</id>
             <name>Central Repository</name>
@@ -94,6 +99,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+
     </repositories>
 
     <!-- Plugin repository information -->
@@ -120,8 +126,30 @@
         <!-- General information -->
         <directory>${project.basedir}/target</directory>
         <outputDirectory>${project.build.directory}/classes</outputDirectory>
+        <testOutputDirectory>${project.build.directory}/test-classes</testOutputDirectory>
         <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
         <finalName>${project.artifactId}-${project.version}</finalName>
+
+        <!-- Resource information -->
+        <resources>
+
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <targetPath>resources</targetPath>
+            </resource>
+
+        </resources>
+
+        <!-- Test resource information -->
+        <testResources>
+
+            <testResource>
+                <directory>${basedir}/src/test/resources</directory>
+                <targetPath>resources</targetPath>
+            </testResource>
+
+        </testResources>
 
         <!-- Plugin information -->
         <plugins>
