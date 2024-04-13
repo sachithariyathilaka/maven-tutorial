@@ -137,6 +137,12 @@
             <resource>
                 <directory>${basedir}/src/main/resources</directory>
                 <targetPath>resources</targetPath>
+                <includes>
+                    <include>**.properties</include>
+                </includes>
+                <excludes>
+                    <exclude>**.json</exclude>
+                </excludes>
             </resource>
 
         </resources>
@@ -147,6 +153,12 @@
             <testResource>
                 <directory>${basedir}/src/test/resources</directory>
                 <targetPath>resources</targetPath>
+                <includes>
+                    <include>**.properties</include>
+                </includes>
+                <excludes>
+                    <exclude>**.json</exclude>
+                </excludes>
             </testResource>
 
         </testResources>
